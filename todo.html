@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="todo-container">
+        
+        <!-- TODO HEADER -->
+        <div id="header">
+            <h1>My To-Do List</h1>
+        </div>
+
+        <!-- TODO FORM -->
+        <div id="todo-form">
+            <input type="text"
+                class="input-item"
+                id="input-box"
+                name="input-box"
+                placeholder="Enter a new task....">
+                
+                
+            <button id="input-button" onclick="addTask()">Add</button>
+        </div>
+
+        <!-- TASK LIST -->
+        <h2>Task List</h2>
+        <ul id="list-container"></ul>
+
+        <hr />
+        <!-- Task Completion Tracker -->
+        <div class="counter-container">
+            <div class="task-counters">
+                Completed: <span id="completed-counter">0</span> | Uncompleted: <span id="uncompleted-counter">0</span>
+            </div>
+        </div>
+    </div>
+        
+    <script src="todo.js"> </script>
+</body>
+</html>
